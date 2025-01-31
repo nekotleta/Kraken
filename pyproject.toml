@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "kraken"
+version = "0.1.0"
+description = ""
+authors = ["VityaShevcov <vitya.shevcov@yandex.ru>"]
+readme = "README.md"
+
+packages = [
+    { include = "tools" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+numpy = "^1.26.4"
+shap = "^0.45.1"
+llvmlite = "^0.44.0"
+numba = "^0.61.0"
+lightgbm = "^4.0.0"
+catboost = "^1.2.7"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
